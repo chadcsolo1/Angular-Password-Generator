@@ -1,8 +1,42 @@
+* {
+    text-align: center;
+
+}
+
 .mb-3 {
-    margin: 1rem;
+    margin-left: 29rem;
     width: 10rem;
+    text-align: center;
 }
 
 div {
     margin: 1rem;
+
+}
+
+label {
+    text-align: center;
+}
+
+input {
+
+    margin: 0.3rem;
+    border-style: black;
+    color: tomato;
+    text-align: center;
+}
+
+button {
+
+    width: 10rem;
+    background-color: aqua;
+    color: tomato;
+}
+
+.container {
+
+    margin: auto;
+    border-style: solid;
+
+
 }
