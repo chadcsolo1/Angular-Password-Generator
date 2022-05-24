@@ -1,0 +1,38 @@
+<h1>Password Generator</h1>
+
+<div class="mb-3">
+  <label class="form-label">Enter Length</label>
+  <input type="text" class="form-control" id="formGroupExampleInput"
+    (input)="onChangeLength($any($event.target).value)">
+</div>
+
+<div>
+  <label>Use Letters</label>
+  <input type="checkbox" (change)="onChangeUseLetters()" />
+</div>
+
+<div>
+  <label>Use Numbers</label>
+  <input type="checkbox" (change)="onChangeUseNumbers()" />
+</div>
+
+<div>
+  <label>Use Symbols</label>
+  <input type="checkbox" (change)="onChangeUseSymbols()" />
+</div>
+
+<div>
+  <button (click)="onButtonClick()"
+    [disabled]="!(length && (includeLetters || includeSymbols || includeNumbers))">Generate</button>
+</div>
+<div class="mb-3">
+  <label class="form-label">Your Password</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" [value]="password" />
+</div>
+
+<!-- <div>
+  <label>Your Password!!!</label>
+  <input [value]="password" />
+</div> -->
+
+{{password}}

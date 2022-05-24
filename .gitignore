@@ -1,0 +1,6 @@
+bin
+obj
+appsettings.json
+settings.json
+package-lock.json
+package.json
